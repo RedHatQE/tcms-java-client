@@ -24,6 +24,7 @@ import java.util.HashMap;
 
 import org.apache.xmlrpc.XmlRpcException;
 
+import com.redhat.qe.xmlrpc.BaseObject;
 import com.redhat.qe.xmlrpc.Session;
 
 /**
@@ -32,7 +33,7 @@ import com.redhat.qe.xmlrpc.Session;
  *
  */
 
-public class Component extends TestopiaObject{
+public class Component extends BaseObject{
 		/**
 		 * Constructor for Testopia Component Object
 		 * @param session session object to facilitate XMLRPC connection

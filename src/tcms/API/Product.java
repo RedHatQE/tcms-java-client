@@ -20,12 +20,11 @@
  */
 package tcms.API;
 
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.apache.xmlrpc.XmlRpcException;
 
+import com.redhat.qe.xmlrpc.BaseObject;
 import com.redhat.qe.xmlrpc.Session;
 
 /**
@@ -34,7 +33,7 @@ import com.redhat.qe.xmlrpc.Session;
  * @author anelson
  *
  */
-public class Product extends TestopiaObject{
+public class Product extends BaseObject{
 
 	protected String productName;
 

@@ -26,6 +26,10 @@ import java.util.Map;
 
 import org.apache.xmlrpc.XmlRpcException;
 
+import com.redhat.qe.xmlrpc.BaseObject;
+import com.redhat.qe.xmlrpc.BaseObject.BooleanAttribute;
+import com.redhat.qe.xmlrpc.BaseObject.IntegerAttribute;
+import com.redhat.qe.xmlrpc.BaseObject.StringAttribute;
 import com.redhat.qe.xmlrpc.Session;
 
 /**
@@ -35,7 +39,7 @@ import com.redhat.qe.xmlrpc.Session;
  *
  */
 @SuppressWarnings("unchecked")
-public class Environment extends TestopiaObject{
+public class Environment extends BaseObject{
 
 	private IntegerAttribute productId = newIntegerAttribute("product", null);
 	private IntegerAttribute valueId = newIntegerAttribute("value", null);

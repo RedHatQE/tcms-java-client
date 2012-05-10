@@ -25,6 +25,10 @@ import java.util.Map;
 
 import org.apache.xmlrpc.XmlRpcException;
 
+import com.redhat.qe.xmlrpc.BaseObject;
+import com.redhat.qe.xmlrpc.BaseObject.BooleanAttribute;
+import com.redhat.qe.xmlrpc.BaseObject.IntegerAttribute;
+import com.redhat.qe.xmlrpc.BaseObject.StringAttribute;
 import com.redhat.qe.xmlrpc.Session;
 
 /**
@@ -34,7 +38,7 @@ import com.redhat.qe.xmlrpc.Session;
  * @author weissj
  *
  */
-public class Build extends TestopiaObject{
+public class Build extends BaseObject{
 	private IntegerAttribute productId = newIntegerAttribute("product", null);
 	private StringAttribute name = newStringAttribute("name", null);
 	private StringAttribute milestone = newStringAttribute("milestone", null);

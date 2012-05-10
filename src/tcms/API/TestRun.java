@@ -24,9 +24,12 @@ import java.util.Map;
 
 import org.apache.xmlrpc.XmlRpcException;
 
+import com.redhat.qe.xmlrpc.BaseObject;
+import com.redhat.qe.xmlrpc.BaseObject.IntegerAttribute;
+import com.redhat.qe.xmlrpc.BaseObject.StringAttribute;
 import com.redhat.qe.xmlrpc.Session;
 
-public class TestRun extends TestopiaObject{
+public class TestRun extends BaseObject{
 		
 	public enum Status{ Running, Stopped }
 	

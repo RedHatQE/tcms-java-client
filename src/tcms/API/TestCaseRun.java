@@ -25,6 +25,9 @@ import java.util.Map;
 
 import org.apache.xmlrpc.XmlRpcException;
 
+import com.redhat.qe.xmlrpc.BaseObject;
+import com.redhat.qe.xmlrpc.BaseObject.IntegerAttribute;
+import com.redhat.qe.xmlrpc.BaseObject.StringAttribute;
 import com.redhat.qe.xmlrpc.Session;
 
 /**
@@ -32,7 +35,7 @@ import com.redhat.qe.xmlrpc.Session;
  * @author anelson, bstice 
  * Creates a wrapper class for the TestRunCase
  */
-public class TestCaseRun extends TestopiaObject{
+public class TestCaseRun extends BaseObject{
 	public enum Statuses {IDLE, PASSED, FAILED, RUNNING, PAUSED, BLOCKED, ERROR};
 			
 	//stores the updated value until it's pushed to testopia with an update

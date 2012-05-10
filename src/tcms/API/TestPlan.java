@@ -25,6 +25,10 @@ import java.util.Map;
 
 import org.apache.xmlrpc.XmlRpcException;
 
+import com.redhat.qe.xmlrpc.BaseObject;
+import com.redhat.qe.xmlrpc.BaseObject.BooleanAttribute;
+import com.redhat.qe.xmlrpc.BaseObject.IntegerAttribute;
+import com.redhat.qe.xmlrpc.BaseObject.StringAttribute;
 import com.redhat.qe.xmlrpc.Session;
 
 /**
@@ -32,7 +36,7 @@ import com.redhat.qe.xmlrpc.Session;
  * @author anelson
  *
  */
-public class TestPlan extends TestopiaObject{
+public class TestPlan extends BaseObject{
 	
 	protected static final String LIST_METHOD = "TestPlan.filter";
 

@@ -24,6 +24,7 @@ import java.util.Map;
 
 import org.apache.xmlrpc.XmlRpcException;
 
+import com.redhat.qe.xmlrpc.BaseObject;
 import com.redhat.qe.xmlrpc.Session;
 
 /**
@@ -39,7 +40,7 @@ import com.redhat.qe.xmlrpc.Session;
  * @author weissj
  *
  */
-public class User extends TestopiaObject{
+public class User extends BaseObject{
 	 
 	private String user; 
 	 
